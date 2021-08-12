@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <main id="areaPrincipal">
+            <section>
+                <strong>
+                    <p>Registrar</p>
+                </strong>
+                <form action="/movies/editar/<%= pelicula.id %>?_method=PUT" method="POST" >
+                                <div>
+                                    <input type="text" name="title" type="text" placeholder="titulo" value="<%= pelicula.title %>">
+                                </div>
+                                <div>
+                                    <input type="text" name="rating" type="text" placeholder="rating" value="<%= pelicula.rating%>">
+                                </div>
+                                <div>
+                                    <input type="text" name="length" type="text" placeholder="tamaño" value="<%= pelicula.length %>">
+                                </div>
+                                <div>
+                                    <input type="text" name="awards" type="number" placeholder="premios" value="<%= pelicula.awards %>">
+                                </div>
+                                <div>
+                                    <input type="text" name="release_date"  type="date" placeholder="fecha"value="<%= pelicula.release_date %>" >
+                                </div>
+                                <div id="boton">
+                                    <input type="submit" value="Crear" class="botonPrimario">
+                                </div>
+                </form>            
+            </section>
+        </main>
+    </body>
+</html>
